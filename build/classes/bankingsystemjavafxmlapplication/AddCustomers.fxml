@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankingsystemjavafxmlapplication.AddCustomersController">
+   <children>
+      <Label alignment="CENTER" layoutX="340.0" layoutY="14.0" prefHeight="48.0" prefWidth="496.0" style="-fx-background-color: GREEN;" text="ADD CUSTOMER" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="8.0" right="8.0" top="5.0" />
+         </padding>
+      </Label>
+      <Pane layoutX="1.0" layoutY="73.0" prefHeight="21.0" prefWidth="1250.0" style="-fx-background-color: black;" />
+      <HBox layoutX="39.0" layoutY="144.0" prefHeight="289.0" prefWidth="520.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="298.0" prefWidth="184.0" style="-fx-border-width: 10PX; -fx-background-color: GRAY; -fx-spacing: 10;">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="190.0" text="FIRST NAME :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="190.0" text="LAST NAME : ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="27.0" prefWidth="182.0" text="PASSWORD :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="190.0" text="ADDRESS:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="190.0" text="PHONE NUMBER: ">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="32.0" prefWidth="190.0" text="DATE OF BIRTH">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="8.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="298.0" prefWidth="332.0" style="-fx-spacing: 10; -fx-background-color: GRAY;">
+               <children>
+                  <TextField fx:id="txtFirstName" prefHeight="32.0" />
+                  <TextField fx:id="txtLastName" prefHeight="32.0" prefWidth="190.0" />
+                  <TextField fx:id="txtPassword" prefHeight="32.0" prefWidth="190.0" />
+                  <TextField fx:id="txtAddress" prefHeight="32.0" />
+                  <TextField fx:id="txtPhoneNumber" prefHeight="32.0" />
+                  <DatePicker fx:id="txtDateOfBirth" prefHeight="32.0" prefWidth="320.0" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </HBox>
+      <Pane layoutX="572.0" layoutY="70.0" prefHeight="212.0" prefWidth="16.0" />
+      <Label alignment="CENTER" layoutX="42.0" layoutY="118.0" prefHeight="30.0" prefWidth="512.0" style="-fx-background-color: GREEN;" text="PERSONAL DETAIL" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Pane layoutX="572.0" layoutY="94.0" prefHeight="416.0" prefWidth="28.0" style="-fx-background-color: BLACK;" />
+      <HBox layoutX="624.0" layoutY="143.0" prefHeight="289.0" prefWidth="601.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="289.0" prefWidth="281.0" style="-fx-spacing: 15;">
+               <children>
+                  <Label text="ACCOUNT NUMBER :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="ACCOUNT TYPE :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="INTEREST RATE :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="BALANCE :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="289.0" prefWidth="343.0" style="-fx-spacing: 15;">
+               <children>
+                  <Label fx:id="lblAccountNumber" text="00000000000">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblAccountType" text="SAVING">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblInterestRate" text="2%">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFirstDeposit" prefHeight="29.0" prefWidth="332.0" text="50">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="659.0" layoutY="411.0" prefHeight="74.0" prefWidth="512.0" style="-fx-spacing: 10;">
+         <children>
+            <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addCustomer" prefHeight="46.0" prefWidth="356.0" style="-fx-background-color: GREEN;" text="ADD" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

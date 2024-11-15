@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankingsystemjavafxmlapplication.AddEmployeeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="479.0" prefWidth="666.0">
+         <children>
+            <Label layoutX="210.0" layoutY="14.0" style="-fx-background-color: GREEN;" text="ADD EMPLOYEE" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="8.0" right="8.0" top="5.0" />
+               </padding>
+            </Label>
+            <HBox layoutX="39.0" layoutY="69.0" prefHeight="289.0" prefWidth="520.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="298.0" prefWidth="184.0" style="-fx-border-width: 10PX; -fx-background-color: GRAY; -fx-spacing: 10;">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="190.0" text=" FIRST NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="190.0" text="LAST NAME : ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="190.0" text="POSITION :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="32.0" prefWidth="190.0" text="SALARY : ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="298.0" prefWidth="332.0" style="-fx-spacing: 10; -fx-background-color: GRAY;">
+                     <children>
+                        <TextField fx:id="txtFirstName" prefHeight="32.0" />
+                        <TextField fx:id="txtLastName" prefHeight="32.0" prefWidth="190.0" />
+                        <TextField fx:id="txtPosition" prefHeight="32.0" />
+                        <TextField fx:id="txtSalary" prefHeight="32.0" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="43.0" layoutY="367.0" prefHeight="100.0" prefWidth="512.0" style="-fx-spacing: 10;">
+               <children>
+                  <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#addEmployee" prefHeight="46.0" prefWidth="127.0" style="-fx-background-color: GREEN;" text="ADD" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#updateEoployee" prefHeight="46.0" prefWidth="127.0" style="-fx-background-color: YELLOW;" text="UPDATE" textFill="#463232">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteEmployee" prefHeight="46.0" prefWidth="127.0" style="-fx-background-color: RED;" text="DELETE" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
